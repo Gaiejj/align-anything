@@ -390,7 +390,7 @@ def main():
     torch.cuda.set_device(current_device)
 
     # read default configs from the yaml file
-    task = os.path.join('text_to_text', 'ppo')
+    task = os.path.join('text_image_to_text', 'ppo')
     dict_cfgs, ds_cfgs = read_cfgs(mode='train', task=task)
 
     # get custom configs from command line

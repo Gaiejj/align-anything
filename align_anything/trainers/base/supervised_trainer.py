@@ -79,6 +79,7 @@ class SupervisedTrainerBase:
             split=self.cfgs.data_cfgs.train_split,
             subset=self.cfgs.data_cfgs.train_subset,
             data_files=self.cfgs.data_cfgs.train_data_files,
+            cache_dir=self.cfgs.data_cfgs.train_cache_dir,
             optional_args=self.cfgs.data_cfgs.train_optional_args,
         )
         train_dataloader = DataLoader(
@@ -99,6 +100,7 @@ class SupervisedTrainerBase:
                 size=self.cfgs.data_cfgs.eval_size,
                 subset=self.cfgs.data_cfgs.eval_subset,
                 data_files=self.cfgs.data_cfgs.eval_data_files,
+                cache_dir=self.cfgs.data_cfgs.eval_cache_dir,
                 optional_args=self.cfgs.data_cfgs.eval_optional_args,
             )
             eval_dataloader = DataLoader(

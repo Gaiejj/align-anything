@@ -59,6 +59,8 @@ train_cfgs:
   freeze_language_model: False
 # Configuration for datasets
 data_cfgs:
+  # The cache directory for save pre-tokenized training dataset
+  train_cache_dir: null
   # Datasets to use for training
   train_datasets: null
   # The format template for training
@@ -73,6 +75,8 @@ data_cfgs:
   train_data_files: null
   # The optional arguments for loading training datasets
   train_optional_args: []
+  # The cache directory for save pre-tokenized evaluation dataset
+  eval_cache_dir: null
   # Datasets to use for evaluation
   eval_datasets: null
   # The format template for evaluation
